@@ -9,7 +9,7 @@ Model.prototype.set = function (key, value) {
 	if (this.data[key]) {
 		this.data[key] = value;
 	}
-	this.fire("change", value);
+	this.emit("change", value);
 }
 
 
